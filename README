@@ -1,0 +1,18 @@
+runic32 - base32-like (RFC 4648) encoder with Anglo-Saxon runes as a base.
+
+Practicality is at least questionable, as it encodes every five bytes into eight weird symbols, each of three octets long (UTF-8), thus puffing the result up to copious 24 bytes. But this result, while remaining pretty much useless, looks great. This deeply philosophical combination justifies the method. Of course one needs a compatible console to see it.
+
+Golang:
+
+go build runic32.go
+
+Examples:
+
+$ echo "ENCODE THIS STRING TO RUNIC-BASED STRING" | ./runic32
+
+$ echo "ᚻᛝᚹᚱᚷᛗᛠᚱᚻᛚᛏᚳᚻᛖᚦᚾᛁᛇᛏᚳᚷᛝᚦᛖᚾᚳᚹᚱᛉᚻᚦᛚᚾᛣᛏᚳᚱᛝᛁᛉᚾᚳᚢᛖᛠᛏᛖᚢᛁᛈᚦᛚᚻᚻᚦᛗᛁᛒᚾᚱᛖᛗᛖᚹᚢᚻᛥᛥᛥᛥᛥᛥ" | ./runic32 -d
+
+$ ./runic32 cert.der > cert.runic32
+$ ./runic32 -d cert.runic32 > cert.der
+ 
+
