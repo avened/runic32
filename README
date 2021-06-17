@@ -17,7 +17,7 @@ $ echo "ᚻᛝᚹᚱᚷᛗᛠᚱᚻᛚᛏᚳᚻᛖᚦᚾᛁᛇᛏᚳᚷᛝᚦᛖ
 $ ./runic32 cert.der > cert.runic32
 $ ./runic32 -d cert.runic32 > cert.der
  
-TLS-certificate (in DER) encoded with runic32 (lines wrapped at 50):
+TLS certificate (in DER) encoded with runic32 (lines wrapped at 50):
 
 ᚷᚦᚢᚠᚾᚷᚢᛏᛏᚻᚦᚩᚣᚻᚠᚩᚠᚻᚠᛏᚱᚠᛏᛒᚠᚩᚻᛞᚩᛞᛞᛁᚱᛇᛡᛁᚣᛢᛠᚫᚩᛇᛠᛈᛣᚢᛏᚷᛈᛟ
 ᛡᚩᚠᚦᛏᚷᚢᚠᛝᚻᛇᛖᚷᛉᚹᛚᚦᚠᚷᚠᛒᛏᛏᚷᚹᛗᚦᚦᚫᛏᚢᚱᚩᚠᚷᛝᚻᚱᚠᚪᚾᛏᚱᛒᛠᚦᚷᚱᛈᛗ
