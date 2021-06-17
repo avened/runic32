@@ -1,5 +1,7 @@
 runic32 - base32-like (RFC 4648) encoder with Anglo-Saxon runes as a base.
 
+Similarly to base32 implementations, this tool encodes arbitrary sequence of bytes into a runic string with alphabet comprising 32 runes as a (numerical) base and one rune as a padding character. It can also decode (correct) runic strings back to bytes. E.g. "ᚻᚳᚢᚱᚷᛒᚦᚳ" == "ABCDE".
+
 Practicality is at least questionable, as it encodes every five bytes into eight weird symbols, each of three octets long (UTF-8), thus puffing the result up to copious 24 bytes. But this result, while remaining pretty much useless, looks great. This deeply philosophical combination justifies the method. Of course one needs a compatible console to see it.
 
 Golang:
